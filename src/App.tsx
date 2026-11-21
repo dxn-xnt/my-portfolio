@@ -1,4 +1,5 @@
 import './App.css'
+import profilePic from './assets/BEJEC, DAN ANTON C. - BSIT 1-B.jpg'
 import { Card, CardContent, CardHeader, CardTitle } from './components/ui/card'
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
         <section className='mb-8 animate-fade-in'>
           <div className='flex flex-col sm:flex-row items-center sm:items-start gap-4 md:gap-6 text-center sm:text-left'>
             <div className="flex items-center border border-border rounded-lg overflow-hidden">
-              <img className="rounded-lg w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 object-cover shrink-0" src="src\assets\BEJEC, DAN ANTON C. - BSIT 1-B.jpg" alt="Dan Bejec" />
+              <img className="rounded-lg w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 object-cover shrink-0" src={profilePic} alt="Dan Bejec" />
             </div>
             <div className='flex-1 w-full flex flex-col items-center sm:items-start'>
               <div className='flex items-center justify-center sm:justify-between gap-2 w-full'>
