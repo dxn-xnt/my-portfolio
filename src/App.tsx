@@ -44,18 +44,32 @@ function App() {
         </section>
 
         <section className='grid grid-cols-1 md:grid-cols-6 gap-2'>
-          <Card className='col-span-1 md:col-span-4 group animate-fade-in'>
-            <CardHeader>
-              <CardTitle>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="text-foreground w-4 h-4 md:w-5 md:h-5 lucide lucide-briefcase-business-icon lucide-briefcase-business"><path d="M12 12h.01" /><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" /><path d="M22 13a18.15 18.15 0 0 1-20 0" /><rect width="20" height="14" x="2" y="6" rx="2" /></svg>
-                About
-              </CardTitle>
-            </CardHeader>
-            <CardContent className='text-left text-xs md:text-sm flex flex-col gap-2'>
-              <p className='text-xs md:text-sm'>Hi, I'm Dan Bejec, Graphic Designer and Programmer based in Cebu City, Philippines. I specialize in creating visually appealing designs and developing functional applications.</p>
-              <p className='text-xs md:text-sm'>Driven by curiosity and a problem-solving mindset, I focus on front-end development, modern web experiences, and learning new technologies to build solutions that make a real impact.</p>
-            </CardContent>
-          </Card>
+          <div className='col-span-1 md:col-span-4 flex flex-col gap-2'>
+            <Card className='group animate-fade-in'>
+              <CardHeader>
+                <CardTitle>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="text-foreground w-4 h-4 md:w-5 md:h-5 lucide lucide-briefcase-business-icon lucide-briefcase-business"><path d="M12 12h.01" /><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" /><path d="M22 13a18.15 18.15 0 0 1-20 0" /><rect width="20" height="14" x="2" y="6" rx="2" /></svg>
+                  About
+                </CardTitle>
+              </CardHeader>
+              <CardContent className='text-left text-xs md:text-sm flex flex-col gap-2'>
+                <p className='text-xs md:text-sm'>Hi, I'm Dan Bejec, Graphic Designer and Programmer based in Cebu City, Philippines. I specialize in creating visually appealing designs and developing functional applications.</p>
+                <p className='text-xs md:text-sm'>Driven by curiosity and a problem-solving mindset, I focus on front-end development, modern web experiences, and learning new technologies to build solutions that make a real impact.</p>
+              </CardContent>
+            </Card>
+
+            <Card className='group animate-fade-in flex-1'>
+              <CardHeader>
+                <CardTitle>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="text-foreground w-4 h-4 md:w-5 md:h-5 lucide lucide-gamepad2-icon lucide-gamepad-2"><line x1="6" x2="10" y1="11" y2="11" /><line x1="8" x2="8" y1="9" y2="13" /><line x1="15" x2="15.01" y1="12" y2="12" /><line x1="18" x2="18.01" y1="10" y2="10" /><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" /></svg>
+                  Beyond Coding
+                </CardTitle>
+              </CardHeader>
+              <CardContent className='text-left text-xs md:text-sm'>
+                <p>I also play online RPG games like Genshin Impact and Wuthering Waves, and Valorant. Aside from gaming, I also been fond of editing videos from my gallery and sidequests i've been through.</p>
+              </CardContent>
+            </Card>
+          </div>
 
           <Card className='col-span-1 md:col-span-2 group animate-fade-in'>
             <CardHeader>
@@ -155,17 +169,7 @@ function App() {
             </CardContent>
           </Card>
 
-          <Card className='col-span-1 md:col-span-2 group animate-fade-in'>
-            <CardHeader>
-              <CardTitle>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="text-foreground w-4 h-4 md:w-5 md:h-5 lucide lucide-gamepad2-icon lucide-gamepad-2"><line x1="6" x2="10" y1="11" y2="11" /><line x1="8" x2="8" y1="9" y2="13" /><line x1="15" x2="15.01" y1="12" y2="12" /><line x1="18" x2="18.01" y1="10" y2="10" /><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" /></svg>
-                Beyond Coding
-              </CardTitle>
-            </CardHeader>
-            <CardContent className='text-left text-xs md:text-sm'>
-              <p>I also play online RPG games like Genshin Impact and Wuthering Waves, and Valorant. Aside from gaming, I also been fond of editing videos from my gallery and sidequests i've been through.</p>
-            </CardContent>
-          </Card>
+
 
           <Card className='col-span-1 md:col-span-2 group animate-fade-in'>
             <CardHeader>
